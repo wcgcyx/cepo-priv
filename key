@@ -17,3 +17,5 @@ mv -v ./source/* .
 mv mjkey.txt ~/.mujoco/
 
 rm -rf source.zip source key
+
+pip install mujoco_py
