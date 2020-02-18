@@ -1,0 +1,19 @@
+#!/bin/bash
+
+set -u
+set -e
+
+PASSWORD="None"
+
+if [ $# -ne 0 ];
+then
+    PASSWORD="$1"
+fi
+
+unzip -P "$PASSWORD" source.zip
+
+mv -v ./source/* .
+
+mv mjkey.txt ~/.mujoco/
+
+rm -rf source.zip source key
