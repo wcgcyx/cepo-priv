@@ -18,4 +18,6 @@ mv mjkey.txt ~/.mujoco/
 
 rm -rf source.zip source key
 
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/root/.mujoco/mujoco200/bin
+
 pip install mujoco_py
